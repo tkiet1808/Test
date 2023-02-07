@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3B5998"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="86dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            app:srcCompat="@drawable/fb" />
+
+        <LinearLayout
+            android:id="@+id/LanguageSelection"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Language"
+                android:layout_width="48dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="English"
+                android:textColor="#8AFFFFFF" />
+
+            <TextView
+                android:id="@+id/Dot"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_margin="3dp"
+                android:text="*"
+                android:textColor="#B5FFFFFF" />
+
+            <TextView
+                android:id="@+id/ChangeLanguageButton"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:text="Change"
+                android:textColor="#D5FFFFFF"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EmailOrPhone"
+            android:layout_width="330dp"
+            android:layout_marginTop="35dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:hint="Email or Phone"
+            android:minHeight="48dp"
+            android:shadowColor="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#A7FFF5F5"
+            android:textColorLink="#FCFCFC" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:shadowColor="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#A7FFF5F5"
+            android:textColorLink="#FCFCFC" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Log In"
+            android:textColor="#CDFFFFFF"
+            android:textSize="17dp"
+            android:backgroundTint="#42FFFFFF"
+            android:alpha="0.3"
+            />
+
+        <TextView
+            android:id="@+id/SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Sign Up for Facebook"
+            android:textColor="#CDFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/ForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="#CDFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp">
+
+            <ImageView
+                android:id="@+id/Circle"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+
+                app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+            <ImageView
+                android:id="@+id/QuestionMark"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_baseline_question_mark_24" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
